@@ -727,3 +727,15 @@ section.relative {
 a {
   text-decoration: none;
 }
+
+cite {
+  font-style: normal; /* Removes the default browser italics */
+}
+
+blockquote {
+  margin: 0; /* Removes default browser indentation */
+  padding: 0; /* Removes default browser padding */
+  color: #e2e8f0; /* Use #334155 for Light Mode */
+  font-style: normal; /* Ensures text isn't automatically italicized */
+  border: none; /* Some browsers add a left border to blockquotes */
+}
