@@ -321,7 +321,7 @@ $(document).ready(function () {
 
   // Close booking modal function
   window.closeBookingModal = function () {
-    $("#booking-modal .bg-white").addClass("scale-95 opacity-0 hidden").removeClass("scale-100 opacity-100");
+    // $("#booking-modal .bg-white").addClass("scale-95 opacity-0 hidden").removeClass("scale-100 opacity-100");
     setTimeout(() => {
       $("#booking-modal").remove();
     }, 300);
