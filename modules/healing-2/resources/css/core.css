@@ -734,8 +734,8 @@ a {
   gap: 10px;
   padding: 12px 18px;
   border-radius: 10px;
-  background: #fff6ec;
-  color: #4b2b2b;
+  /*background: ;*/
+  /*color: #4b2b2b;*/
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -744,7 +744,7 @@ a {
 }
 
 .review-btn:hover {
-  background: #ffe8d1;
+  /*background: #ffe8d1;*/
   transform: translateY(-1px);
 }
 
