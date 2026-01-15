@@ -38,6 +38,7 @@
   <!-- start css -->
   <link rel="stylesheet" href="resources/css/core.css" />
   <link rel="stylesheet" href="resources/css/index.css" />
+  <link rel="stylesheet" href="resources/css/main-partners.css" />
   <!-- end css -->
 </head>
 <!-- end <head> -->
@@ -1105,7 +1106,7 @@
 
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Testimonial 1 -->
-            <article class="bg-gradient-to-br from-rose-50 to-orange-50 rounded-2xl p-8 flex flex-col h-full">
+            <article class="scroll-transform bg-gradient-to-br from-rose-50 to-orange-50 rounded-2xl p-8 flex flex-col h-full">
               <figure class="flex items-center mb-4">
                 <img
                         src="resources/images/svg/review_5_star.svg"
@@ -1125,127 +1126,171 @@
                 </p>
               </blockquote>
 
-                <div class="mt-auto w-full text-center">
-                  <figure class="justify-center">
-                    <div class="flex justify-center">
-                      <img src="https://i.pravatar.cc/40?img=1" class="w-10 h-10 rounded-full"  alt="avatar"/>
-                    </div>
-                    <figcaption class="font-semibold text-gray-800">Sarah M.</figcaption>
-                  </figure>
-                  <div class="justify-center">
-                    <cite class="text-sm text-gray-600">Verified Client</cite>
-                  </div>
-                  <div class="justify-center">
-                    <span class="client-location">📍 New York, NY</span>
-                  </div>
+              <div class="mt-auto w-full text-center">
+                <figure class="justify-center">
                   <div class="flex justify-center">
-                    <a class="check-more" href="#" rel="noopener noreferrer" target="_blank">
+                    <img src="https://i.pravatar.cc/40?img=1" class="w-10 h-10 rounded-full"  alt="avatar"/>
+                  </div>
+                  <figcaption class="font-semibold text-gray-800">Sarah M.</figcaption>
+                </figure>
+                <div class="justify-center">
+                  <cite class="text-sm text-gray-600">Verified Client</cite>
+                </div>
+                <div class="justify-center">
+                  <span class="client-location">📍 New York, NY</span>
+                </div>
+                <div class="flex justify-center">
+                  <a class="check-more" href="#" rel="noopener noreferrer" target="_blank">
+                    <img
+                            src="resources/images/svg/Google_Favicon_2025.svg"
+                            alt="Read Full review..."
+                            class="google-icon"
+                    />
+                    <span class="text-purple-900">Check review</span>
+                    <span class="arrow">→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="scroll-transform-reverse bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 flex flex-col h-full">
+              <figure class="flex flex-col h-full">
+
+                <!-- Rating -->
+                <div class="flex items-center mb-4">
+                  <img
+                          src="resources/images/svg/review_5_star.svg"
+                          alt="5 stars"
+                          class="review-5-stars"
+                  />
+                  <strong class="ml-2 font-bold text-gray-800">5/5</strong>
+                </div>
+
+                <!-- Review title -->
+                <h3 class="font-bold text-black text-1xl mb-2">
+                  My Reiki session was incredible and life coaching was amazing
+                </h3>
+
+                <!-- Review text -->
+                <blockquote class="mb-6">
+                  <p class="text-gray-600 leading-relaxed">
+                    "The life coaching sessions have been life-changing. Celeste's intuitive approach
+                    helped me break through barriers I didn't even know existed. I feel more aligned
+                    with my purpose and confident in my decisions."
+                  </p>
+                </blockquote>
+
+                <!-- Client info -->
+                <figcaption class="mt-auto text-center">
+
+                  <div class="flex justify-center mb-2">
+                    <img
+                            src="https://i.pravatar.cc/40?img=1"
+                            class="w-10 h-10 rounded-full"
+                            alt="Michael J. avatar"
+                    />
+                  </div>
+
+                  <div class="font-semibold text-gray-800">
+                    Michael J.
+                  </div>
+
+                  <cite class="block text-sm text-gray-600 mb-1">
+                    Verified Client
+                  </cite>
+
+                  <span class="block text-sm client-location mb-3">📍 New York, NY</span>
+
+                  <div class="flex justify-center">
+                    <a
+                            class="check-more flex items-center gap-2"
+                            href="#"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                    >
                       <img
                               src="resources/images/svg/Google_Favicon_2025.svg"
-                              alt="Read Full review..."
+                              alt="Read full review on Google"
                               class="google-icon"
                       />
                       <span class="text-purple-900">Check review</span>
                       <span class="arrow">→</span>
                     </a>
                   </div>
-                </div>
-            </article>
 
-            <!-- Testimonial 2 -->
-            <article class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 flex flex-col h-full">
-              <div class="flex items-center mb-4">
-                <img
-                        src="resources/images/svg/review_5_star.svg"
-                        alt="5 stars"
-                        class="review-5-stars"
-                />
-                <strong class="ml-2 font-bold text-gray-800">5/5</strong>
-              </div>
-
-              <h3 class="font-bold text-black text-1xl mb-2 flex">My Reiki session was incredible and life coaching was amazing</h3>
-
-              <blockquote>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                  "The life coaching sessions have been life-changing. Celeste's intuitive approach helped me break through
-                  barriers I didn't even know existed. I feel more aligned with my purpose and
-                  confident in my decisions."
-                </p>
-              </blockquote>
-
-              <div class="mt-auto w-full text-center">
-                <figure class="justify-center">
-                  <div class="flex justify-center">
-                    <img src="https://i.pravatar.cc/40?img=1" class="w-10 h-10 rounded-full"  alt="avatar"/>
-                  </div>
-                  <figcaption class="font-semibold text-gray-800">Michael J.</figcaption>
-                </figure>
-                <div class="justify-center">
-                  <cite class="text-sm text-gray-600">Verified Client</cite>
-                </div>
-                <div class="justify-center">
-                  <span class="client-location">📍 New York, NY</span>
-                </div>
-                <div class="flex justify-center">
-                  <a class="check-more" href="#" rel="noopener noreferrer" target="_blank">
-                    <img
-                            src="resources/images/svg/Google_Favicon_2025.svg"
-                            alt="Read Full review..."
-                            class="google-icon"
-                    />
-                    <span class="text-purple-900">Check review</span>
-                    <span class="arrow">→</span>
-                  </a>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
             </article>
 
             <!-- Testimonial 3 -->
-            <article class="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 flex flex-col h-full">
-              <figure class="flex items-center mb-4">
-                <img
-                        src="resources/images/svg/review_5_star.svg"
-                        alt="5 stars"
-                        class="review-5-stars"
-                />
-                <strong class="ml-2 font-bold text-gray-800">5/5</strong>
-              </figure>
+            <article class="scroll-transform bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 flex flex-col h-full">
+              <figure class="flex flex-col h-full">
 
-              <h3 class="font-bold text-black text-1xl mb-2 flex">My Reiki session was incredible</h3>
-
-              <blockquote>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                  "The chakra balancing session was exactly what I needed. I felt a deep sense of peace and my energy levels
-                  improved dramatically. The whole experience was professional yet deeply
-                  personal."
-                </p>
-              </blockquote>
-
-              <div class="mt-auto w-full text-center">
-                <figure class="justify-center">
-                  <div class="flex justify-center">
-                    <img src="https://i.pravatar.cc/40?img=1" class="w-10 h-10 rounded-full"  alt="avatar"/>
-                  </div>
-                  <figcaption class="font-semibold text-gray-800">Lisa R..</figcaption>
-                </figure>
-                <div class="justify-center">
-                  <cite class="text-sm text-gray-600">Verified Client</cite>
+                <!-- Rating -->
+                <div class="flex items-center mb-4">
+                  <img
+                          src="resources/images/svg/review_5_star.svg"
+                          alt="5 stars"
+                          class="review-5-stars"
+                  />
+                  <strong class="ml-2 font-bold text-gray-800">5/5</strong>
                 </div>
-                <div class="justify-center">
-                  <span class="client-location">📍 New York, NY</span>
-                </div>
-                <div class="flex justify-center">
-                  <a class="check-more" href="#" rel="noopener noreferrer" target="_blank">
+
+                <!-- Review title -->
+                <h3 class="font-bold text-black text-1xl mb-2">
+                  My Reiki session was incredible
+                </h3>
+
+                <!-- Review content -->
+                <blockquote class="mb-6">
+                  <p class="text-gray-600 leading-relaxed">
+                    "The chakra balancing session was exactly what I needed. I felt a deep sense of peace
+                    and my energy levels improved dramatically. The whole experience was professional
+                    yet deeply personal."
+                  </p>
+                </blockquote>
+
+                <!-- Client details -->
+                <figcaption class="mt-auto text-center">
+
+                  <div class="flex justify-center mb-2">
                     <img
-                            src="resources/images/svg/Google_Favicon_2025.svg"
-                            alt="Read Full review..."
-                            class="google-icon"
+                            src="https://i.pravatar.cc/40?img=1"
+                            class="w-10 h-10 rounded-full"
+                            alt="Lisa R. avatar"
                     />
-                    <span class="text-purple-900">Check review</span>
-                    <span class="arrow">→</span>
-                  </a>
-                </div>
-              </div>
+                  </div>
+
+                  <div class="font-semibold text-gray-800">
+                    Lisa R.
+                  </div>
+
+                  <cite class="block text-sm text-gray-600 mb-1">
+                    Verified Client
+                  </cite>
+
+                  <span class="block text-sm client-location mb-3">📍 New York, NY</span>
+
+                  <div class="flex justify-center">
+                    <a
+                            class="check-more flex items-center gap-2"
+                            href="#"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                    >
+                      <img
+                              src="resources/images/svg/Google_Favicon_2025.svg"
+                              alt="Read full review on Google"
+                              class="google-icon"
+                      />
+                      <span class="text-purple-900">Check review</span>
+                      <span class="arrow">→</span>
+                    </a>
+                  </div>
+
+                </figcaption>
+              </figure>
             </article>
           </div>
           <div class="text-center pt-8 flex justify-center">
@@ -1258,6 +1303,49 @@
       </section>
 
     <!-- end Testimonials Section -->
+
+    <section class="py-12 overflow-hidden">
+      <div class="partners-wrapper container mx-auto px-6" id="partnersWrapper">
+        <div class="partners-track" id="partnersTrack">
+
+          <figure class="partners-box">
+            <img src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/partners-img1.png" alt="Partner 1">
+            <figcaption class="sr-only">Partner 1</figcaption>
+          </figure>
+
+          <figure class="partners-box">
+            <img src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/partners-img2.png" alt="Partner 2">
+            <figcaption class="sr-only">Partner 2</figcaption>
+          </figure>
+
+          <figure class="partners-box">
+            <img src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/partners-img3.png" alt="Partner 3">
+            <figcaption class="sr-only">Partner 3</figcaption>
+          </figure>
+
+          <figure class="partners-box">
+            <img src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/partners-img4.png" alt="Partner 4">
+            <figcaption class="sr-only">Partner 4</figcaption>
+          </figure>
+
+          <figure class="partners-box">
+            <img src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/partners-img5.png" alt="Partner 5">
+            <figcaption class="sr-only">Partner 5</figcaption>
+          </figure>
+
+          <figure class="partners-box">
+            <img src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/partners-img6.png" alt="Partner 6">
+            <figcaption class="sr-only">Partner 6</figcaption>
+          </figure>
+
+          <figure class="partners-box">
+            <img src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/partners-img1.png" alt="Partner 7">
+            <figcaption class="sr-only">Partner 7</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
 
     <!-- start Contact Section -->
     <section class="box-animate animate-on-scroll py-16 max-w-7xl mx-auto text-center">
@@ -1630,6 +1718,7 @@
 
 <!-- start Core javascript -->
 <script src="resources/js/core.js"></script>
+<script src="resources/js/partners-slider.js"></script>
 <!-- end Core javascript -->
 
 <!-- start Custome javascript -->
