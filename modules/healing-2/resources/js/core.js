@@ -210,122 +210,122 @@ $(document).ready(function () {
   });
 
   // Modal functionality for booking
-  $('.book-session-btn, button:contains("Book Session"), button:contains("Book your Session")').click(function (e) {
-    e.preventDefault();
-    showBookingModal();
-  });
+  // $('.book-session-btn, button:contains("Book Session"), button:contains("Book your Session")').click(function (e) {
+  //   e.preventDefault();
+  //   showBookingModal();
+  // });
 
-  function showBookingModal() {
-    const modal = $(`
-            <div class="fixed inset-0 bg-black bg-opacity-50 z-50 max-h-screen flex items-center justify-center py-4" id="booking-modal">
-                <div class="bg-white rounded-2xl  overflow-y-auto hide-scrollbar  max-h-screen max-w-md m-7 w-full my-3 p-10 transform scale-95 opacity-0 transition-all duration-300">
-                    <div class="text-center mb-6">
-                        <h3 class="font-playfair text-2xl font-bold text-gray-800 mb-2">Book Your Session</h3>
-                        <p class="text-gray-600">Choose your preferred treatment and time</p>
-                    </div>
-
-                    <form id="booking-form" class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Treatment</label>
-                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
-                                <option>Select a treatment</option>
-                                <option>Reiki Healing</option>
-                                <option>Life Coaching</option>
-                                <option>Chakra Balancing</option>
-                                <option>Sound Healing</option>
-                                <option>Meditation</option>
-                                <option>Energy Healing</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
-                            <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Time</label>
-                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
-                                <option>Select a time</option>
-                                <option>9:00 AM</option>
-                                <option>10:00 AM</option>
-                                <option>11:00 AM</option>
-                                <option>1:00 PM</option>
-                                <option>2:00 PM</option>
-                                <option>3:00 PM</option>
-                                <option>4:00 PM</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                            <input type="text" placeholder="Your full name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                            <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                            <input type="tel" placeholder="Your phone number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
-                        </div>
-
-                        <div class="flex space-x-4 pt-4">
-                            <button type="button" class="flex-1 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors" id="cancelBtn" onclick="closeBookingModal()">
-                                Cancel
-                            </button>
-                            <button type="submit" class="flex-1 px-6 py-3 bg-rose-400 text-white rounded-lg hover:bg-rose-500 transition-colors">
-                                Book Session
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        `);
-
-    $("body").append(modal);
-
-    // Animate modal in
-    setTimeout(() => {
-      $("#booking-modal .bg-white").removeClass("scale-95 opacity-0").addClass("scale-100 opacity-100");
-    }, 10);
-
-    // Handle form submission
-    $("#booking-form").submit(function (e) {
-      e.preventDefault();
-      $(this).find('button[type="submit"]').html('<div class="spinner"></div>').prop("disabled", true);
-
-      setTimeout(() => {
-        $(this).find('button[type="submit"]').html("Booked!").removeClass("bg-rose-400").addClass("bg-green-500");
-        setTimeout(() => {
-          closeBookingModal();
-        }, 1500);
-      }, 2000);
-    });
-
-    // Close modal on outside click
-    $("#booking-modal").click(function (e) {
-      if (e.target === this) {
-        closeBookingModal();
-      }
-    });
-
-    $("#cancelBtn").click(function () {
-      closeBookingModal();
-      $("#floating-book-btn").show();
-      $("#backToTopBtn").removeClass("hidden");
-    });
-  }
+  // function showBookingModal() {
+  //   const modal = $(`
+  //           <div class="fixed inset-0 bg-black bg-opacity-50 z-50 max-h-screen flex items-center justify-center py-4" id="booking-modal">
+  //               <div class="bg-white rounded-2xl  overflow-y-auto hide-scrollbar  max-h-screen max-w-md m-7 w-full my-3 p-10 transform scale-95 opacity-0 transition-all duration-300">
+  //                   <div class="text-center mb-6">
+  //                       <h3 class="font-playfair text-2xl font-bold text-gray-800 mb-2">Book Your Session</h3>
+  //                       <p class="text-gray-600">Choose your preferred treatment and time</p>
+  //                   </div>
+  //
+  //                   <form id="booking-form" class="space-y-4">
+  //                       <div>
+  //                           <label class="block text-sm font-medium text-gray-700 mb-2">Treatment</label>
+  //                           <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
+  //                               <option>Select a treatment</option>
+  //                               <option>Reiki Healing</option>
+  //                               <option>Life Coaching</option>
+  //                               <option>Chakra Balancing</option>
+  //                               <option>Sound Healing</option>
+  //                               <option>Meditation</option>
+  //                               <option>Energy Healing</option>
+  //                           </select>
+  //                       </div>
+  //
+  //                       <div>
+  //                           <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
+  //                           <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
+  //                       </div>
+  //
+  //                       <div>
+  //                           <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Time</label>
+  //                           <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
+  //                               <option>Select a time</option>
+  //                               <option>9:00 AM</option>
+  //                               <option>10:00 AM</option>
+  //                               <option>11:00 AM</option>
+  //                               <option>1:00 PM</option>
+  //                               <option>2:00 PM</option>
+  //                               <option>3:00 PM</option>
+  //                               <option>4:00 PM</option>
+  //                           </select>
+  //                       </div>
+  //
+  //                       <div>
+  //                           <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+  //                           <input type="text" placeholder="Your full name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
+  //                       </div>
+  //
+  //                       <div>
+  //                           <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+  //                           <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
+  //                       </div>
+  //
+  //                       <div>
+  //                           <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+  //                           <input type="tel" placeholder="Your phone number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 focus:border-transparent">
+  //                       </div>
+  //
+  //                       <div class="flex space-x-4 pt-4">
+  //                           <button type="button" class="flex-1 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors" id="cancelBtn" onclick="closeBookingModal()">
+  //                               Cancel
+  //                           </button>
+  //                           <button type="submit" class="flex-1 px-6 py-3 bg-rose-400 text-white rounded-lg hover:bg-rose-500 transition-colors">
+  //                               Book Session
+  //                           </button>
+  //                       </div>
+  //                   </form>
+  //               </div>
+  //           </div>
+  //       `);
+  //
+  //   $("body").append(modal);
+  //
+  //   // Animate modal in
+  //   setTimeout(() => {
+  //     $("#booking-modal .bg-white").removeClass("scale-95 opacity-0").addClass("scale-100 opacity-100");
+  //   }, 10);
+  //
+  //   // Handle form submission
+  //   $("#booking-form").submit(function (e) {
+  //     e.preventDefault();
+  //     $(this).find('button[type="submit"]').html('<div class="spinner"></div>').prop("disabled", true);
+  //
+  //     setTimeout(() => {
+  //       $(this).find('button[type="submit"]').html("Booked!").removeClass("bg-rose-400").addClass("bg-green-500");
+  //       setTimeout(() => {
+  //         closeBookingModal();
+  //       }, 1500);
+  //     }, 2000);
+  //   });
+  //
+  //   // Close modal on outside click
+  //   $("#booking-modal").click(function (e) {
+  //     if (e.target === this) {
+  //       closeBookingModal();
+  //     }
+  //   });
+  //
+  //   $("#cancelBtn").click(function () {
+  //     closeBookingModal();
+  //     $("#floating-book-btn").show();
+  //     $("#backToTopBtn").removeClass("hidden");
+  //   });
+  // }
 
   // Close booking modal function
-  window.closeBookingModal = function () {
-    // $("#booking-modal .bg-white").addClass("scale-95 opacity-0 hidden").removeClass("scale-100 opacity-100");
-    setTimeout(() => {
-      $("#booking-modal").remove();
-    }, 300);
-  };
+  // window.closeBookingModal = function () {
+  //   // $("#booking-modal .bg-white").addClass("scale-95 opacity-0 hidden").removeClass("scale-100 opacity-100");
+  //   setTimeout(() => {
+  //     $("#booking-modal").remove();
+  //   }, 300);
+  // };
 
   // Typing effect for hero title
   function typeWriter(element, text, speed = 100) {
@@ -370,38 +370,38 @@ $(document).ready(function () {
   });
 
   // Floating action button for quick booking
-  const floatingBtn = $(`
-        <button 
-        
-      class="back-to-top1 transition-opacity duration-300 text-2xl font-bold "
-      aria-label="floadingBTn"
-      " id="floating-book-btn">
-            <svg class="w-6 h-6 items-center flex justify-center mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-        </button>
-    `);
-
-  $("body").append(floatingBtn);
-
-  $("#floating-book-btn").click(function () {
-    $(this).hide();
-    $("#backToTopBtn").addClass("hidden");
-    showBookingModal();
-  });
-  // Hide floating button on scroll up, show on scroll down
-  let lastScrollTop = 0;
-  $(window).scroll(function () {
-    const scrollTop = $(this).scrollTop();
-
-    if (scrollTop > lastScrollTop && scrollTop > 300) {
-      $("#floating-book-btn").addClass("translate-y-20 opacity-0");
-    } else {
-      $("#floating-book-btn").removeClass("translate-y-20 opacity-0");
-    }
-
-    lastScrollTop = scrollTop;
-  });
+  // const floatingBtn = $(`
+  //       <button
+  //
+  //     class="back-to-top1 transition-opacity duration-300 text-2xl font-bold "
+  //     aria-label="floadingBTn"
+  //     " id="floating-book-btn">
+  //           <svg class="w-6 h-6 items-center flex justify-center mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  //               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+  //           </svg>
+  //       </button>
+  //   `);
+  //
+  // $("body").append(floatingBtn);
+  //
+  // $("#floating-book-btn").click(function () {
+  //   $(this).hide();
+  //   $("#backToTopBtn").addClass("hidden");
+  //   showBookingModal();
+  // });
+  // // Hide floating button on scroll up, show on scroll down
+  // let lastScrollTop = 0;
+  // $(window).scroll(function () {
+  //   const scrollTop = $(this).scrollTop();
+  //
+  //   if (scrollTop > lastScrollTop && scrollTop > 300) {
+  //     $("#floating-book-btn").addClass("translate-y-20 opacity-0");
+  //   } else {
+  //     $("#floating-book-btn").removeClass("translate-y-20 opacity-0");
+  //   }
+  //
+  //   lastScrollTop = scrollTop;
+  // });
 
   // Add loading animation to buttons on click
   $("#book-online-button").click(function () {
