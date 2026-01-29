@@ -36,3 +36,8 @@
 .check-more:hover .arrow {
     transform: translateX(4px);
 }
+
+.review-highlight {
+    font-weight: bold;
+    display: inline;
+}
