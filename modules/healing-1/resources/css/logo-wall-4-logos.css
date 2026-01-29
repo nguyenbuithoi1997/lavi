@@ -1,0 +1,118 @@
+/* Container Styling */
+.logo-wall-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.logo-wall-container {
+    max-width: 1140px; /* Widened to accommodate 4 items */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo-wall-container > h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.logo-wall-container > p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.logo-wall-container >  a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logo-wall-container > figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+
+/* Updated Grid for 4 Items */
+.logo-grid {
+    display: flex;
+    justify-content: space-between; /* Spreads 4 items evenly */
+    align-items: flex-start;
+    gap: 30px; /* Reduced gap slightly for 4-column fit */
+    flex-wrap: wrap;
+}
+
+.logo-card {
+    flex: 1;
+    min-width: 220px; /* Ensures items don't get too squished */
+    margin-bottom: 30px;
+}
+
+/* Logo Box Alignment */
+.logo-box {
+    height: 65px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.logo-box img {
+    max-height: 100%;
+    max-width: 150px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-card:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05); /* Slight grow instead of lift */
+}
+
+/* Typography Hierarchy */
+.award-name {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 3px;
+}
+
+.award-year {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Footer & Mobile Tweaks */
+.logo-wall-footer {
+    margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .logo-grid {
+        justify-content: center; /* Centers items on smaller desktops */
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-card {
+        flex: 0 0 100%; /* Stacks 1-by-1 on mobile */
+    }
+}
